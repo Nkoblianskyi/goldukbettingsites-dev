@@ -60,7 +60,7 @@ export default function ResponsibleGamblingPage() {
                   {item.num}
                 </div>
                 <div>
-                  <h3 className="font-heading font-bold text-sm uppercase tracking-wide text-foreground">
+                  <h3 className="font-heading font-bold text-sm uppercase tracking-wide text-black">
                     {item.title}
                   </h3>
                   <p className="font-sans text-muted-foreground text-xs mt-1 leading-relaxed">{item.desc}</p>
