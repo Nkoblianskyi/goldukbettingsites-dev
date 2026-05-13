@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Gold UK Betting Sites — Light Sport Theme */
+    --background: 220 22% 14%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 12%;
+    /* Primary: Emerald Green */
+    --primary: 152 65% 38%;
+    --primary-foreground: 0 0% 100%;
+    /* Secondary: Deep Blue */
+    --secondary: 221 83% 28%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 16% 93%;
+    --muted-foreground: 220 12% 46%;
+    /* Accent: Gold */
+    --accent: 43 90% 50%;
+    --accent-foreground: 220 25% 10%;
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 20% 86%;
+    --input: 210 20% 86%;
+    --ring: 152 65% 38%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Sports background image — full page, fixed */
+  background-image: url('/images/sport-hero-bg.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* Dark overlay via pseudo — handled via wrapper in layout */
+  background-color: hsl(220, 22%, 10%);
+}
+
+/* Full-page dark overlay on top of the background image */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 14, 28, 0.72);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* All page content must sit above the overlay */
+#page-root {
+  position: relative;
+  z-index: 1;
+}
+
+/* Sport divider */
+.sport-rule {
+  border-top: 3px solid hsl(var(--primary));
+}
