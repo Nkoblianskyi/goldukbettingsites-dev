@@ -115,7 +115,7 @@ export default function ResponsibleGamblingPage() {
               { name: "Gambling Therapy", url: "www.gamblingtherapy.org", desc: "Free international online support" },
             ].map((org, i) => (
               <div key={i} className="rounded-lg border border-primary/20 bg-primary/5 px-4 py-3">
-                <div className="font-heading font-bold text-sm text-foreground">{org.name}</div>
+                <div className="font-heading font-bold text-sm text-black">{org.name}</div>
                 <div className="text-primary font-mono text-[10px] mt-0.5">{org.url}</div>
                 <div className="font-sans text-muted-foreground text-[10px] mt-0.5">{org.desc}</div>
               </div>

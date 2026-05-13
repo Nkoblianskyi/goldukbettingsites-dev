@@ -40,7 +40,7 @@ export default function CookiePolicyPage() {
             ].map((item, i) => (
               <div key={i} className="rounded-lg border border-border bg-muted/30 px-4 py-4">
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-heading font-bold text-sm uppercase tracking-wide text-foreground">{item.title}</h3>
+                  <h3 className="font-heading font-bold text-sm uppercase tracking-wide text-black">{item.title}</h3>
                   <span className={`${item.tagColor} font-mono text-[9px] px-2.5 py-1 rounded uppercase tracking-widest`}>
                     {item.tag}
                   </span>

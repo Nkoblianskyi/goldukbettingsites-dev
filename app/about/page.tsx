@@ -39,7 +39,7 @@ export default function AboutPage() {
               <div key={i} className="flex gap-4 py-4 first:pt-0 last:pb-0">
                 <div className="w-1 flex-shrink-0 bg-primary rounded-full mt-0.5 self-stretch" aria-hidden="true" />
                 <div>
-                  <h3 className="font-heading font-bold text-sm text-foreground uppercase tracking-wide">{item.title}</h3>
+                  <h3 className="font-heading font-bold text-sm text-black uppercase tracking-wide">{item.title}</h3>
                   <p className="font-sans text-muted-foreground text-xs mt-1 leading-relaxed">{item.desc}</p>
                 </div>
               </div>
@@ -63,9 +63,9 @@ export default function AboutPage() {
           </div>
         </ContentBlock>
 
-        <div className="bg-muted/60 rounded-xl border border-border px-5 py-4">
+        <div className="bg-muted rounded-xl border border-border px-5 py-4">
           <p className="font-sans text-muted-foreground text-xs leading-relaxed">
-            <strong className="text-foreground font-semibold">Disclaimer:</strong> goldukbettingsites.com is an informational comparison site. We are not a bookmaker and do not accept bets. All operators we recommend hold a current UKGC licence. Please gamble responsibly. 18+ only.
+            <strong className="text-black font-semibold">Disclaimer:</strong> goldukbettingsites.com is an informational comparison site. We are not a bookmaker and do not accept bets. All operators we recommend hold a current UKGC licence. Please gamble responsibly. 18+ only.
           </p>
         </div>
 
