@@ -44,7 +44,7 @@ export function TopSitesModal() {
             <img
               src={topSite.logo || "/placeholder.svg"}
               alt="Top operator"
-              className="h-10 w-auto object-contain"
+              className="h-24 w-auto object-contain"
             />
           </div>
 
